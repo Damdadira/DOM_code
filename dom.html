@@ -40,10 +40,12 @@
     </section>
     <span>Hello World!</span>
     <script>
-      const image = document.querySelector('img'); //여러 이미지가 있다면 제일 처음 아이만 출력
-      const image2 = document.querySelector('img[src="img/tbs2.jpg"]'); //이 이미지만 출력하겠다
-      const images = document.querySelectorAll('img'); //이미지를 전부 가져옴
-      console.log(image);
+      const section = document.querySelector('section');
+      const h2 = document.createElement('h2'); //새로운 태그 생성
+      h2.setAttribute('class', 'title'); //클래스 생성 <h2 class="title"></h2>
+      h2.textContent = 'This is title'; //텍스트 입력 <h2 class="title">This is title</h2>
+
+      section.appendChild(h2); //section에 h2추가
     </script>
   </body>
 </html>
