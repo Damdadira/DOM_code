@@ -49,6 +49,13 @@
       //h1과 h3사이에 추가하려면(동적으로)
       const h3 = document.querySelector('h3');
       section.insertBefore(h2, h3);
+
+      section.removeChild(h2);
+
+      section.innerHTML = `
+        <img src="img/tbs2.jpg" alt="avatar"/>
+        <h1 id="brand">Dream</h1>
+        `;
     </script>
   </body>
 </html>
