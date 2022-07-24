@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      body {
+        background-color: black;
+        text-align: center;
+      }
+      section {
+        width: 50%;
+        margin: 50px auto;
+        background-color: brown;
+        border-radius: 20px;
+        padding: 20px;
+      }
+      img {
+        z-index: 100;
+        will-change: opacity;
+      }
+      h1,
+      h3,
+      span {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <img src="img/tbs2.jpg" alt="avatar" />
+      <h1 id="brand">Dream Coding</h1>
+      <h3>Don't forget to code your dream</h3>
+    </section>
+    <span>Hello World!</span>
+    <script>
+      const image = document.querySelector('img'); //여러 이미지가 있다면 제일 처음 아이만 출력
+      const image2 = document.querySelector('img[src="img/tbs2.jpg"]'); //이 이미지만 출력하겠다
+      const images = document.querySelectorAll('img'); //이미지를 전부 가져옴
+      console.log(image);
+    </script>
+  </body>
+</html>
